@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>お申し込み</title>
+
+    <meta name="author" content="株式会社キャリア アンド ブリッジ" />
+    <meta name="copyright" content="株式会社キャリア アンド ブリッジ" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- icons -->
+    <link rel="icon" href="../../img/logo.sikaku.png">
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Kaushan+Script|Dancing+Script|Mansalva|Kosugi&display=swap" rel="stylesheet">
+
+    <!-- css,js -->
+    <link rel="stylesheet" href="../../css/base.css" media="all">
+    <link rel="stylesheet" href="../../css/main.css" media="all">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../js/animation.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript">
+<!--
+
+function check(){
+
+	var flag = 0;
+
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.email.value.match(/.+@.+\..+/)){
+
+		flag = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag){
+
+		window.alert('メールアドレスが正しくありません'); // メールアドレス以外が入力された場合は警告ダイアログを表示
+		return false; // 送信を中止
+
+	}
+	else{
+
+		return true; // 送信を実行
+
+	}
+
+}
+
+// -->
+</script>
+
+  </head>
+<body>
+  <div class="body">
+  <nav id="gnav" class="gnav">
+    <ul class="container">
+      <li><a href="../../html/KonoSite.html"><font size="-1">サイトについて</font></a></li>
+      <li><a href="https://prdtalk.com"><img src="../../img/logo.png" alt="candblogo"></a></li>
+      <li><a href="../contactForm/contact.html"><font size="-1">お問い合わせ</font></a></li>
+    </ul>
+  </nav>
+
+
+  <div class="likepaper formWrap">
+
+  <h1 class="contactTitle">お申し込み</h1>
+
+  <p class="marginzyouge">下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+
+  <form method="post" action="mail.php" name="form1" onSubmit="return check()">
+    <table class="formTable">
+      <tr>
+        <th>コース選択<br>（複数選択可）</th>
+        <td>
+          <input type="checkbox" name="コース[]" value="Mercury Session">Mercury Session<br>　～キャリアを振り返るセッション～<br><br>
+          <input type="checkbox" name="コース[]" value="Venus Session">Venus Session<br>　～価値観を見える化する～<br><br>
+          <input type="checkbox" name="コース[]" value="Mars Session">Mars Session<br>　～ポジティブコアをつかむ～<br><br>
+          <input type="checkbox" name="コース[]" value="Jupitar Session">Jupitar Session<br>　～これからのキャリア展望を持つ～<br><br>
+          <input type="checkbox" name="コース[]" value="Uranus Session">Uranus Session<br>　～しなやかに学ぶ力を高める～<br><br>
+          <p>〔各個人セッション　1時間 8,800円（税込）〕<br><br></p>
+          <span> ※必須</span></td>
+      </tr>
+      <tr>
+        <th>お名前<br>（フルネーム）</th>
+        <td><input size="20" type="text" placeholder="例)キャリア 太郎" name="お名前" /> <span>※必須</span></td>
+      </tr>
+      <tr>
+        <th>Mail（半角）</th>
+        <td><input size="30" type="text" placeholder="例)キャリア太郎@prdtalk.com" name="email" /> <span>※必須</span></td>
+      </tr>
+      <tr>
+        <th>性別</th>
+        <td><input type="radio" name="性別" id="sex" value="男" /> 男　
+          <input type="radio" name="性別" id="sex" value="女" /> 女 </td>
+      </tr>
+      <tr>
+        <th>講師に伝えておきたい事<br /></th>
+        <td><textarea name="講師へのメッセージ内容" cols="50" rows="5"></textarea></td>
+      </tr>
+    </table>
+    <p align="center">
+      <input class="button2" type="submit""value="確認" />　<input class="button2" type="reset" style="margin-top: 5px -webkit-appearance; value="リセット" />
+    </p>
+  </form>
+
+  <a class="ppmark" href="../privacyPolicy.html">プライバシーポリシー&raquo;</a>
+</div>
+
+<footer id="footer">
+
+</ul>
+<nav class="gnav">
+  <ul class="container">
+    <li class="pc"><a href="../../index.html">HOME</a></li>
+    <li><a href="../../html/privacyPolicy.html"><font size="-1">Privacy Policy</font></a></li>
+    <li><a href="../../html/contactForm/contact.html"><font size="-1">お問い合わせ</font></a></li>
+    <li><a href="../../html/applicationForm/application.html"><font size="-1">お申し込み</font></a></li>
+  </ul>
+  <ul class="container gnav2">
+    <li><a href="http://www.candb.co.jp"><font size="-1">運営会社</font></a></li>
+    <li><a href="../../html/KonoSite.html"><font size="-1">サイトについて</font></a></li>
+    <li><font size="-1">　　　　</font></li>
+    <li class="pc"><font size="-1">　　　　</font></li>
+  </ul>
+</nav>
+
+<div class="candw">
+<small>Copyright © 2020 CAREER AND BRIDGE, Inc. All Rights Reserved.</small>
+</div>
+</footer>
+</div>
+</body>
+</html>
